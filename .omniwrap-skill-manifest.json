@@ -1,0 +1,14 @@
+{
+  "agent_protocols_supported": [
+    "mcp-code-mode",
+    "a2a-1.0",
+    "ag-ui",
+    "mcp-tasks"
+  ],
+  "client_name": "CodeJackRabbitClient",
+  "language": "c",
+  "operation_count": 28,
+  "package_name": "code_jack_rabbit",
+  "schema": "omniwrap.embedded-skill-manifest/v1",
+  "sha256": "5441fbd82e4e6aceb742d6289fa2fb6eae4beb678f34d3f26d1abbcf80792daa"
+}

@@ -1,0 +1,216 @@
+{
+  "contract_fingerprint": "b06781a26c4469e8f12830a04d455957bf620d42b9e1df155e93ee00f293d1c9",
+  "sdk_targets_version": "1.1.0",
+  "targets": [
+    {
+      "identity": {
+        "coordinates": "code_jack_rabbit@0.3.4",
+        "ecosystem": "CMake",
+        "entry": "omniwrap_client_t",
+        "import": "#include \"omniwrap_client.h\""
+      },
+      "operations": {
+        "analyzeContractDrift": {
+          "member": "omniwrap_analyze_contract_drift",
+          "method": "POST",
+          "path": "/v1/analysis/contract-drift",
+          "resource": "analysis",
+          "signature": "int omniwrap_analyze_contract_drift(omniwrap_client_t *client, const char *body_json, omniwrap_response_t *out_response)"
+        },
+        "analyzePerfFinOps": {
+          "member": "omniwrap_analyze_perf_fin_ops",
+          "method": "POST",
+          "path": "/v1/analysis/perf-finops",
+          "resource": "analysis",
+          "signature": "int omniwrap_analyze_perf_fin_ops(omniwrap_client_t *client, const char *body_json, omniwrap_response_t *out_response)"
+        },
+        "analyzeSupplyChain": {
+          "member": "omniwrap_analyze_supply_chain",
+          "method": "POST",
+          "path": "/v1/supply-chain/analyze",
+          "resource": "supply_chain",
+          "signature": "int omniwrap_analyze_supply_chain(omniwrap_client_t *client, const char *body_json, omniwrap_response_t *out_response)"
+        },
+        "buildAutofixBundle": {
+          "member": "omniwrap_build_autofix_bundle",
+          "method": "POST",
+          "path": "/v1/reviews/autofix",
+          "resource": "reviews",
+          "signature": "int omniwrap_build_autofix_bundle(omniwrap_client_t *client, const char *body_json, omniwrap_response_t *out_response)"
+        },
+        "collectDeveloperAudit": {
+          "member": "omniwrap_collect_developer_audit",
+          "method": "POST",
+          "path": "/cli/managed/developer-audit",
+          "resource": "developer_intelligence",
+          "signature": "int omniwrap_collect_developer_audit(omniwrap_client_t *client, const char *body_json, omniwrap_response_t *out_response)"
+        },
+        "computeRiskRadar": {
+          "member": "omniwrap_compute_risk_radar",
+          "method": "POST",
+          "path": "/v1/reviews/risk-radar",
+          "resource": "reviews",
+          "signature": "int omniwrap_compute_risk_radar(omniwrap_client_t *client, const char *body_json, omniwrap_response_t *out_response)"
+        },
+        "createCodingTask": {
+          "member": "omniwrap_create_coding_task",
+          "method": "POST",
+          "path": "/v1/tasks",
+          "resource": "tasks",
+          "signature": "int omniwrap_create_coding_task(omniwrap_client_t *client, const char *body_json, omniwrap_response_t *out_response)"
+        },
+        "createReview": {
+          "member": "omniwrap_create_review",
+          "method": "POST",
+          "path": "/v1/reviews",
+          "resource": "reviews",
+          "signature": "int omniwrap_create_review(omniwrap_client_t *client, const char *body_json, omniwrap_response_t *out_response)"
+        },
+        "currentDeveloperIdentity": {
+          "member": "omniwrap_current_developer_identity",
+          "method": "POST",
+          "path": "/cli/managed/developer-identity",
+          "resource": "developer_intelligence",
+          "signature": "int omniwrap_current_developer_identity(omniwrap_client_t *client, const char *body_json, omniwrap_response_t *out_response)"
+        },
+        "declareDeveloperProjectContext": {
+          "member": "omniwrap_declare_developer_project_context",
+          "method": "POST",
+          "path": "/cli/managed/audit-context",
+          "resource": "developer_intelligence",
+          "signature": "int omniwrap_declare_developer_project_context(omniwrap_client_t *client, const char *body_json, omniwrap_response_t *out_response)"
+        },
+        "evaluateComplianceGate": {
+          "member": "omniwrap_evaluate_compliance_gate",
+          "method": "POST",
+          "path": "/v1/compliance/gate",
+          "resource": "compliance",
+          "signature": "int omniwrap_evaluate_compliance_gate(omniwrap_client_t *client, const char *body_json, omniwrap_response_t *out_response)"
+        },
+        "exportSarif": {
+          "member": "omniwrap_export_sarif",
+          "method": "POST",
+          "path": "/v1/compliance/sarif",
+          "resource": "compliance",
+          "signature": "int omniwrap_export_sarif(omniwrap_client_t *client, const char *body_json, omniwrap_response_t *out_response)"
+        },
+        "finalizeMeteringQuota": {
+          "member": "omniwrap_finalize_metering_quota",
+          "method": "POST",
+          "path": "/v1/saas/metering/finalize",
+          "resource": "saas",
+          "signature": "int omniwrap_finalize_metering_quota(omniwrap_client_t *client, const char *body_json, omniwrap_response_t *out_response)"
+        },
+        "generateSbom": {
+          "member": "omniwrap_generate_sbom",
+          "method": "POST",
+          "path": "/v1/sbom",
+          "resource": "sbom",
+          "signature": "int omniwrap_generate_sbom(omniwrap_client_t *client, const char *body_json, omniwrap_response_t *out_response)"
+        },
+        "getAnalyticsRoi": {
+          "member": "omniwrap_get_analytics_roi",
+          "method": "GET",
+          "path": "/v1/analytics/roi",
+          "resource": "analytics",
+          "signature": "int omniwrap_get_analytics_roi(omniwrap_client_t *client, omniwrap_response_t *out_response)"
+        },
+        "getCapabilities": {
+          "member": "omniwrap_get_capabilities",
+          "method": "GET",
+          "path": "/v1/capabilities",
+          "resource": "capabilities",
+          "signature": "int omniwrap_get_capabilities(omniwrap_client_t *client, omniwrap_response_t *out_response)"
+        },
+        "getHealth": {
+          "member": "omniwrap_get_health",
+          "method": "GET",
+          "path": "/health",
+          "resource": "health",
+          "signature": "int omniwrap_get_health(omniwrap_client_t *client, omniwrap_response_t *out_response)"
+        },
+        "getSaasBlueprint": {
+          "member": "omniwrap_get_saas_blueprint",
+          "method": "GET",
+          "path": "/v1/saas/blueprint",
+          "resource": "saas",
+          "signature": "int omniwrap_get_saas_blueprint(omniwrap_client_t *client, omniwrap_response_t *out_response)"
+        },
+        "getTriageQueue": {
+          "member": "omniwrap_get_triage_queue",
+          "method": "GET",
+          "path": "/v1/triage",
+          "resource": "triage",
+          "signature": "int omniwrap_get_triage_queue(omniwrap_client_t *client, omniwrap_response_t *out_response)"
+        },
+        "issueSurfaceLease": {
+          "member": "omniwrap_issue_surface_lease",
+          "method": "POST",
+          "path": "/v1/saas/surface-lease/issue",
+          "resource": "saas",
+          "signature": "int omniwrap_issue_surface_lease(omniwrap_client_t *client, const char *body_json, omniwrap_response_t *out_response)"
+        },
+        "listCodingTasks": {
+          "member": "omniwrap_list_coding_tasks",
+          "method": "GET",
+          "path": "/v1/tasks",
+          "resource": "tasks",
+          "signature": "int omniwrap_list_coding_tasks(omniwrap_client_t *client, omniwrap_response_t *out_response)"
+        },
+        "listWaitlist": {
+          "member": "omniwrap_list_waitlist",
+          "method": "GET",
+          "path": "/v1/waitlist",
+          "resource": "waitlist",
+          "signature": "int omniwrap_list_waitlist(omniwrap_client_t *client, omniwrap_response_t *out_response)"
+        },
+        "managedAuditSnapshots": {
+          "member": "omniwrap_managed_audit_snapshots",
+          "method": "POST",
+          "path": "/cli/managed/audit-snapshots",
+          "resource": "developer_intelligence",
+          "signature": "int omniwrap_managed_audit_snapshots(omniwrap_client_t *client, const char *body_json, omniwrap_response_t *out_response)"
+        },
+        "planStackedPrSplit": {
+          "member": "omniwrap_plan_stacked_pr_split",
+          "method": "POST",
+          "path": "/v1/analysis/split-pr",
+          "resource": "analysis",
+          "signature": "int omniwrap_plan_stacked_pr_split(omniwrap_client_t *client, const char *body_json, omniwrap_response_t *out_response)"
+        },
+        "providerCostEvidence": {
+          "member": "omniwrap_provider_cost_evidence",
+          "method": "POST",
+          "path": "/cli/managed/finops",
+          "resource": "developer_intelligence",
+          "signature": "int omniwrap_provider_cost_evidence(omniwrap_client_t *client, const char *body_json, omniwrap_response_t *out_response)"
+        },
+        "registerWaitlist": {
+          "member": "omniwrap_register_waitlist",
+          "method": "POST",
+          "path": "/v1/waitlist",
+          "resource": "waitlist",
+          "signature": "int omniwrap_register_waitlist(omniwrap_client_t *client, const char *body_json, omniwrap_response_t *out_response)"
+        },
+        "reserveMeteringQuota": {
+          "member": "omniwrap_reserve_metering_quota",
+          "method": "POST",
+          "path": "/v1/saas/metering/reserve",
+          "resource": "saas",
+          "signature": "int omniwrap_reserve_metering_quota(omniwrap_client_t *client, const char *body_json, omniwrap_response_t *out_response)"
+        },
+        "submitDeveloperEvidence": {
+          "member": "omniwrap_submit_developer_evidence",
+          "method": "POST",
+          "path": "/cli/managed/developer-evidence",
+          "resource": "developer_intelligence",
+          "signature": "int omniwrap_submit_developer_evidence(omniwrap_client_t *client, const char *body_json, omniwrap_response_t *out_response)"
+        }
+      },
+      "package_directory": "../code-jack-rabbit-c-sdk",
+      "package_manifest": "CMakeLists.txt",
+      "reference": "api.md",
+      "renderer": "c"
+    }
+  ]
+}
